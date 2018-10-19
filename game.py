@@ -92,7 +92,7 @@ def exit_leads_to(exits, direction):
     >>> exit_leads_to(rooms["Reception"]["exits"], "east")
     "your personal tutor's office"
     >>> exit_leads_to(rooms["Tutor"]["exits"], "west")
-    "Reception"
+    'Reception'
     """
     return rooms[exits[direction]]["name"]
     
